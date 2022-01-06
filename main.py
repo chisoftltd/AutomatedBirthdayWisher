@@ -2,8 +2,6 @@ import random
 import smtplib
 import datetime as dt
 import pandas
-import glob
-import os
 
 #   -------------------------------- CONSTANTS --------------------------------------
 now = dt.datetime.now()
@@ -19,7 +17,6 @@ except FileNotFoundError:
     print("File not found!")
 else:
     names = data.to_dict(orient="records")
-
 
 #   -------------------------------- Automated Birthday Wisher ----------------------------------
 for name in names:
